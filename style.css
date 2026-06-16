@@ -3,7 +3,8 @@ h1 {color: red;
   border-bottom: 3px solid red;}
 h2 {display: inline-block;
   border-bottom: 2px solid blue;}
-body {background-color: lightblue;}
+body {background-color: black;
+      color: white;}
 h3 {display: inline-block;
   border-bottom: 2px solid green;}
 .hover-effect:hover {opacity: 0.5;}
@@ -41,3 +42,8 @@ div:first-of-type img{filter: grayscale(100%);}
 justify-content:center;
 gap:10px;
 flex-wrap:wrap;}
+/* Desktop */
+@media (min-width: 600px) {
+  body {background-color: lightblue;
+        color: black;}
+}
