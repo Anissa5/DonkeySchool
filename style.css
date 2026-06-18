@@ -1,5 +1,4 @@
-h1 {color: red; 
-  display: red;
+h1 {color: red;
   border-bottom: 3px solid red;}
 h2 {display: inline-block;
   border-bottom: 2px solid blue;}
@@ -8,7 +7,10 @@ body {background-color: black;
 h3 {display: inline-block;
   border-bottom: 2px solid green;}
 .hover-effect:hover {opacity: 0.5;}
-img { border-radius: 3px;}
+
+img {max-width: 100%;
+    height: auto;
+    border-radius: 3px;}
 div:first-of-type img{filter: grayscale(100%);}
 .menu {position: relative;
        display: inline-block;
@@ -23,7 +25,7 @@ div:first-of-type img{filter: grayscale(100%);}
                position: absolute;
                background-color: white;
                min-width: 180px;
-               box-shadow: 0 4px 8px rgba(0,0,0,2);
+               box-shadow: 0 4px 8px rgba(0,0,0,1);
                z-index: 1000;}
 .menu-content a {display: block;
                  padding: 12px;
@@ -31,19 +33,42 @@ div:first-of-type img{filter: grayscale(100%);}
                  color: black;}
 .menu-content a:hover {background-color: #f1f1f1;}
 .menu:hover .menu-content {display:block;}
-.bloc-footer{width:80%;
+.articles {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.bloc-footer{width:40%;
              margin:30px auto;
              padding:25px;
              border:2px solid #666;
              border-radius:20px;
              text-align:center;}
 .bloc-footer h4{margin-top:0;}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
 .contact form{ display: flex;
+flex-direction: column;
 justify-content:center;
 gap:10px;
-flex-wrap:wrap;}
+flex-wrap:wrap;
+align-items: center;}
+.ligne {display: flex;
+        align-items: center;
+        margin-bottom: 5px;}
+.ligne label {width: 80px;
+              font-size: 18px;
+            text-align: left;}
+.ligne input {width: 220px;
+              height: 20px;}
+button {padding: 10px 20px}
+.kingster-copyright-left {text-align:center}
 /* Desktop */
 @media (min-width: 600px) {
   body {background-color: lightblue;
-        color: black;}
-}
+        color: black;}}
+@media (max-width: 768px) {.articles {flex-direction: column;}}
+@media (max-width: 768px) {.footer-container {flex-direction: column;align-items: center;}
+                           .bloc-footer {width: 90%;}}      
