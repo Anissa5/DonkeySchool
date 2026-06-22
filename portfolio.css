@@ -1,0 +1,35 @@
+      *{margin: 0;
+        padding: 0;
+       box-sizing: border-box;}
+body   {font-family: Arial, sans-serif;
+       background-color: #f4f4f4;
+       color: #333;}
+header {background-color: #5da161;
+       color: white;
+       text-align: center;
+       padding: 40px;}
+nav    {background-color: #9eba9f;
+       text-align: center;
+       padding: 15px;}
+nav a  {color:white;
+       text-decoration: none;
+       margin: 0 15px;
+       font-weight: bold;}
+nav a:visited {color: white;}
+nav a:hover {color:#3a4427;}
+.photo {width: 200px;
+       height: 250px;
+       border-radius: 20px;
+       margin-bottom: 20px;
+       display: block;
+       margin: 0 auto;}
+section{width: 80%;
+       margin: 30px auto;}
+h2     {margin-bottom: 15px;
+       color: #324c33;}
+ul     {margin-left: 20px;}
+footer {background-color: #5da161;
+       color: white;
+       text-align: center;
+       padding: 20 px;
+       margin-top:40px;}
